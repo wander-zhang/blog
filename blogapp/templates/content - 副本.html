@@ -1,0 +1,105 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang='zh-cn'>
+  <head>
+    <title>个人博客</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link type="text/css" href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link type="text/css" href="{% static "css/main.css" %}" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 50px;
+        padding-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+  	<div style="background:url('{% static "pictures/background.jpg" %}') no-repeat center top; background-attachment:fixed;background-size: cover;">  		
+  		
+  		<nav class="navbar navbar-inverse navbar-fixed-top">  			
+		  <div class="container" style="padding-top:5px">
+		    <ul class="nav nav-pills">
+			  <li role="presentation"><a href="index.html">博客首页</a></li>
+			  <li role="presentation" class="active"><a href="article.html">心路历程</a></li>
+			  <li role="presentation"><a href="#">作品展示</a></li>
+			  <li role="presentation"><a href="personaldata.html">个人资料</a></li>
+			</ul>
+		  </div>
+		</nav>
+						
+	    <div class="artcontainer" >
+		    <div class="row">
+		    	<div class="col-md-2"></div>
+		    	<div class="col-md-8">
+		    		<div style="opacity:0.5;padding-top:20px">		   
+		    		<div class="list-group list-group-item-success ">
+					  <a href="#" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">西藏之旅>>><span class="badge" >14</span></h4>
+			  			<p class="list-group-item-text">2017-05-11
+			    		</p>					    
+			    		<p class="list-group-item-text">西藏，一个不敢轻易触碰确又深藏在心念念不忘的名字。西藏，一个永远无法用一个词准确定义的地方。正如我的山东老乡马丽华在她那著名的散文集《走过西藏》中所表达的。西藏：对于未来者，她是令人神往的净土；对于离去者，她是曾经魂牵梦绕的家园；对于久居者，她是一种生活方式；对于过往者，她是珍藏一生的记忆。
+			    		</p>					  	
+					   </a>
+					   <a href="#" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">西藏之旅>>><span class="badge" >14</span></h4>
+			  			<p class="list-group-item-text">2017-05-11
+			    		</p>					    
+			    		<p class="list-group-item-text">西藏，一个不敢轻易触碰确又深藏在心念念不忘的名字。西藏，一个永远无法用一个词准确定义的地方。正如我的山东老乡马丽华在她那著名的散文集《走过西藏》中所表达的。西藏：对于未来者，她是令人神往的净土；对于离去者，她是曾经魂牵梦绕的家园；对于久居者，她是一种生活方式；对于过往者，她是珍藏一生的记忆。
+			    		</p>					  	
+					   </a>
+					   <a href="#" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">西藏之旅>>><span class="badge" >14</span></h4>
+			  			<p class="list-group-item-text">2017-05-11
+			    		</p>					    
+			    		<p class="list-group-item-text">西藏，一个不敢轻易触碰确又深藏在心念念不忘的名字。西藏，一个永远无法用一个词准确定义的地方。正如我的山东老乡马丽华在她那著名的散文集《走过西藏》中所表达的。西藏：对于未来者，她是令人神往的净土；对于离去者，她是曾经魂牵梦绕的家园；对于久居者，她是一种生活方式；对于过往者，她是珍藏一生的记忆。
+			    		</p>					  	
+					   </a>   					  
+					</div>
+					</div>
+		    	</div>		    
+	    	</div>
+	    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-2"></div>
+    			<div class="col-md-8">
+		    	<form role="form">
+				  <div class="form-group">
+					  <script type="text/javascript" charset="utf-8" src="{% static "kindeditor/kindeditor.js" %}"></script>       
+					  <script type="text/javascript" charset="utf-8" src="{% static "kindeditor/lang/zh_CN.js" %}"></script>       
+					  <script>
+					        KindEditor.ready(function(K) {
+					                window.editor = K.create('#content');
+					        });
+					</script>
+					  <div class = "posts">
+					      <section class="post">
+					         <form  method="post">
+					          <label>标题</label>
+					          <input class="pure-input-1-4" name="biao" type="text">
+					          <label>标签</label>
+					          <input class="pure-input-1-4" name="tags" type="text">          
+					          <textarea style="width:700px;height:400px;"  id='content'></textarea> 
+					          <button class="btn" >Submit</button>
+					          </form>
+					      </section>
+					     </div>				    
+				  </div>
+				</form>
+				</div>
+			</div>
+    	</div>	    	
+    	</div>    	
+    	<div id="footerwrap">
+			<div class="container">
+				<h4>Created by <a href="http://blacktie.co">BlackTie.co</a> - Copyright 2014</h4>
+			</div>
+		</div>
+
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+  </body>
+</html>

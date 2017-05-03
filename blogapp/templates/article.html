@@ -1,0 +1,139 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang='zh-cn'>
+  <head>
+    <title>个人博客</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link type="text/css" href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link type="text/css" href="{% static "css/main.css" %}" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 50px;
+        padding-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+  	<div style="background:url('{% static "pictures/background.jpg" %}') no-repeat center top; background-attachment:fixed;background-size: cover;">  		
+  		
+  		<nav class="navbar navbar-inverse navbar-fixed-top">  			
+		  <div class="container" style="padding-top:5px">
+		    <ul class="nav nav-pills">
+			  <li role="presentation"><a href="index.html">博客首页</a></li>
+			  <li role="presentation" class="active"><a href="article.html">心路历程</a></li>
+			  <li role="presentation"><a href="#">作品展示</a></li>
+			  <li role="presentation"><a href="personaldata.html">个人资料</a></li>
+			</ul>
+		  </div>
+		</nav>
+						
+	    <div class="artcontainer" >
+		    <div class="row">
+		    	<div class="col-md-2"></div>
+		    	<div class="col-md-8">
+		    		<div style="opacity:0.5;padding-top:20px">		   
+		    		<div class="list-group list-group-item-success ">
+					  <a href="id={{id0}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title0}}>>><span class="badge" >{{count0}}</span></h4>
+			  			<p class="list-group-item-text">{{date0}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data0|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id1}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title1}}>>><span class="badge" >{{count1}}</span></h4>
+			  			<p class="list-group-item-text">{{date1}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data1|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id2}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title2}}>>><span class="badge" >{{count2}}</span></h4>
+			  			<p class="list-group-item-text">{{date2}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data2|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id3}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title3}}>>><span class="badge" >{{count3}}</span></h4>
+			  			<p class="list-group-item-text">{{date3}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data3|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id4}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title4}}>>><span class="badge" >{{count4}}</span></h4>
+			  			<p class="list-group-item-text">{{date4}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data4|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id5}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title5}}>>><span class="badge" >{{count5}}</span></h4>
+			  			<p class="list-group-item-text">{{date5}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data5|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id6}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title6}}>>><span class="badge" >{{count6}}</span></h4>
+			  			<p class="list-group-item-text">{{date6}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data6|safe }}...
+			    		</p>					  	
+					   </a>
+					   <a href="id={{id7}}" class="list-group-item ">					  
+			  			<h4 class="list-group-item-heading">{{title7}}>>><span class="badge" >{{count7}}</span></h4>
+			  			<p class="list-group-item-text">{{date7}}
+			    		</p>					    
+			    		<p class="list-group-item-text">{{ data7|safe }}...
+			    		</p>					  	
+					   </a>					   				       					  
+					</div>
+					<div class="row">
+		    	<div class="col-md-6"></div>
+		    	<div class="col-md-6">
+					<nav aria-label="Page navigation">
+					  <ul class="pagination" >
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li><a href="#">6</a></li>
+					    <li><a href="#">7</a></li>
+					    <li><a href="#">8</a></li>
+					    <li><a href="#">9</a></li>
+					    <li><a href="#">10</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					  </ul>
+					</nav>
+					</div>
+					</div>
+					</div>				
+		    	</div>		    
+	    	</div>	    	
+    	</div>
+    
+    	<div id="footerwrap">
+			<div class="container">
+				<h4>Created by <a href="http://blacktie.co">wander-zhang</a> - Copyright 2017</h4>
+			</div>
+		</div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

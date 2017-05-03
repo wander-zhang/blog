@@ -1,0 +1,22 @@
+#footerwrap {
+    background: #5F5A5A;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #5F5A5A;
+    text-align: center;
+    opacity: 0.8
+}
+#footerwrap .container{
+	margin-top: 0px;
+    text-align: center;
+    padding-bottom: 30px;}
+.artcontainer{
+	
+	height: 1000px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
