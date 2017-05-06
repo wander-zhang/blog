@@ -11,9 +11,9 @@
 	margin-top: 0px;
     text-align: center;
     padding-bottom: 30px;}
-.artcontainer{
-	
+.artcontainer{	
 	height: 1000px;
+        height: auto;
 	padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;

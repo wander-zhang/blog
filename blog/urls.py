@@ -18,15 +18,12 @@ from django.contrib import admin
 from blogapp import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.decorators.cache import cache_page
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'index.html$', views.index),
     url(r'article.html$', views.article),
     url(r'personaldata.html$', views.personaldata),
     url(r'^content/', views.content),
-    url(r'id=5$', views.id5),
-    url(r'id=1$', views.id1),
-    url(r'id=2$', views.id2),
-    url(r'id=3$', views.id3),
-    url(r'id=4$', views.id4),
+    url(r'id=(?P<idnum>\d)$', cache_page(60*15)(views.id)),
 ]
