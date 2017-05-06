@@ -87,10 +87,10 @@ def content(request):
         'content': title.contentdata.encode(),
         'date': title.createdate,
     })
-def id5(request):
+def id(request,idnum):
     """A view of all bands."""
     top = Article.objects.order_by("-readtime")[0:5]
-    title=Article.objects.get(id=5)
+    title=Article.objects.get(id=idnum)
     title.readtime+=1
     title.save()
     return render(request, 'content.html',{
@@ -99,52 +99,3 @@ def id5(request):
         'date': title.createdate,'top1': top[0].title,'top1id':top[0].id,'top2': top[1].title,'top2id':top[1].id,'top3': top[2].title,'top3id':top[2].id,
                                          'top4': top[3].title,'top4id':top[3].id,'top5': top[4].title,'top5id':top[4].id,
     })
-def id4(request):
-    """A view of all bands."""
-    top = Article.objects.order_by("-readtime")[0:5]
-    title=Article.objects.get(id=4)
-    title.readtime+=1
-    title.save()
-    return render(request, 'content.html',{
-        'title': title.title,
-        'content': title.contentdata.encode(),
-        'date': title.createdate,'top1': top[0].title,'top1id':top[0].id,'top2': top[1].title,'top2id':top[1].id,'top3': top[2].title,'top3id':top[2].id,
-                                         'top4': top[3].title,'top4id':top[3].id,'top5': top[4].title,'top5id':top[4].id,
-    })
-def id3(request):
-    """A view of all bands."""
-    top = Article.objects.order_by("-readtime")[0:5]
-    title=Article.objects.get(id=3)
-    title.readtime+=1
-    title.save()
-    return render(request, 'content.html',{
-        'title': title.title,
-        'content': title.contentdata.encode(),
-        'date': title.createdate,'top1': top[0].title,'top1id':top[0].id,'top2': top[1].title,'top2id':top[1].id,'top3': top[2].title,'top3id':top[2].id,
-                                         'top4': top[3].title,'top4id':top[3].id,'top5': top[4].title,'top5id':top[4].id,
-    })
-def id2(request):
-    """A view of all bands."""
-    top = Article.objects.order_by("-readtime")[0:5]
-    title=Article.objects.get(id=2)
-    title.readtime+=1
-    title.save()
-    return render(request, 'content.html',{
-        'title': title.title,
-        'content': title.contentdata.encode(),
-        'date': title.createdate,'top1': top[0].title,'top1id':top[0].id,'top2': top[1].title,'top2id':top[1].id,'top3': top[2].title,'top3id':top[2].id,
-                                         'top4': top[3].title,'top4id':top[3].id,'top5': top[4].title,'top5id':top[4].id,
-    })
-def id1(request):
-    """A view of all bands."""
-    top = Article.objects.order_by("-readtime")[0:5]
-    title=Article.objects.get(id=1)
-    title.readtime+=1
-    title.save()
-    return render(request, 'content.html',{
-        'title': title.title,
-        'content': title.contentdata.encode(),
-        'date': title.createdate,'top1': top[0].title,'top1id':top[0].id,'top2': top[1].title,'top2id':top[1].id,'top3': top[2].title,'top3id':top[2].id,
-                                         'top4': top[3].title,'top4id':top[3].id,'top5': top[4].title,'top5id':top[4].id,
-    })
-# Create your views here.
